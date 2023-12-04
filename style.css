@@ -23,13 +23,15 @@ body{
 }
 /* Giphy party */
 h1{
-    margin-top: -25px;
+    margin-top: -2px;
     position: absolute;
+    font-size: 3rem;
+
 }
 /* contaner for top submission menu */
 .inputfield{
     width: 100%;
-    height: 100px;
+    height: auto;
     background-color: black;
     position: fixed;
     top: 0;
@@ -43,28 +45,48 @@ h1{
     color: #917873;
     border-bottom: .5px solid #423633 ;
     z-index: 1;
+    -webkit-backdrop-filter: blur(10px); 
+/* 
+    width: 100dvw;
+    height: 50px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    padding: 5px;
+    word-spacing: 5px;
+    color: whitesmoke;
+    backdrop-filter: blur(50px);
+    background-color: rgba(0,0,0, 0.5);
+ */
+
+
 }
 /* search field */
 .fetchgif{
+    width: 400px;
     background-color: #62514D;
     border: none;
     border-radius: 5px;
     margin: 5px;
-    font-size: large;
-    padding: 8px;
+    font-size: 2rem;
+    padding: .6rem;
     text-align: center;
     color: lightgray;
-    margin-top: 50px;
+    margin-top: 65px;
 }
 .fetchgif:hover{
+    width: 400px;
     background-color: #917873;
     border: none;
     border-radius: 5px;
     margin: 5px;
-    font-size: large;
-    padding: 8px;
+    font-size: 2rem;
+    padding: .5rem;
     color: lightgray;
-    margin-top: 50px;
+    margin-top: 65px;
+
 }
 .fetchgif:focus{
     border: none;
@@ -74,18 +96,18 @@ h1{
 /* gif sumbittion botton */
 .submitBTN{
     display: block;
-    width: 120px;
+    width: 150px;
     background-color: #5E427B;
     color: white;
-    padding: 8px;
+    padding: 1rem;
     text-align: center;
     cursor: pointer;
     border-radius: 5px;
-    font-size: large;
+    font-size: 1.5rem;
     color: #75628A;
     box-shadow: 0 0 3px black;
     margin: 5px;
-    margin-top: 50px;
+    margin-top: 65px;
     border: none;
 }
 .submitBTN:hover{
@@ -95,28 +117,6 @@ h1{
 }
 .hiddensubmit{
     display: none;
-}
-/* gif delete button */
-.deleteallBTN{
-    display: block;
-    width: 120px;
-    background-color: #872B2B;
-    color: white;
-    padding: 8px;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: large;
-    color: #7E5959;
-    box-shadow: 0 0 3px black;
-    margin: 5px;
-    margin-top: 50px;
-    border: none;
-}
-.deleteallBTN:hover{
-    background-color: #7E5959;
-    color: #872B2B;
-    transition: 200ms;
 }
 /* main gif container */
 .maingifcontainer{
@@ -137,7 +137,7 @@ img{
 /* site infomation */
 .info{   
     width: 100%;
-    height: 50px;
+    height: auto;
     background-color: black;
     position: fixed;
     bottom: 0;
@@ -145,11 +145,12 @@ img{
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(70px);
+    -webkit-backdrop-filter: blur(10px); 
     background-color: rgba(0,0,0, 0.5);
     box-shadow: 0px 0px 15px black;
     color: #423633;
     border-top: .05px solid;
-    font-size: large;
+    font-size: 2rem;
     word-spacing: 5px;
 }
 p, a{
@@ -181,6 +182,7 @@ a:hover{
 }
 .removesingelitem:hover{
     backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(10px); 
     background-color: rgba(0,0,0, 0.1);
     position: absolute;
     border-radius: 5px;
@@ -191,4 +193,7 @@ a:hover{
     border: .5px solid black;
     box-shadow: 0 0 10px white;
     transition: .4s;
+}
+.navbar-sub-container{
+    padding: 1rem;
 }
