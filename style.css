@@ -30,7 +30,7 @@ body{
     z-index: 1;
 }
 /* search field */
-#fetchgif{
+.fetchgif{
     background-color: #b8b8b8;
     border: none;
     width: 500px;
@@ -41,10 +41,10 @@ body{
     text-align: center;
     color: dimgray;
 }
-#fetchgif:hover{
+.fetchgif:hover{
     background-color: #cfcfcf;
 }
-#fetchgif:focus{
+.fetchgif:focus{
     border: none;
     outline: none;
     color: dimgray;
