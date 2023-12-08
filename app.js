@@ -1,4 +1,4 @@
-//Made By: Charles M Milam Jr | Date: 12/4/23 | app.js
+//Made By: Charles M Milam Jr | Date: 11-9-23 | app.js
 //****************************************************************************************************
 
 //***********************testing url connetion***********************
@@ -14,6 +14,9 @@ fetch(urltest)
     }
 })
 //****************************************************************************************************
+
+
+
 
 //image container
 const image = document.querySelector('.maingifcontainer')
@@ -39,6 +42,7 @@ image.appendChild(createdcontainer)
 createdcontainer.addEventListener('click', function(e){
     e.target.parentElement.remove();
 })
+
 
 //create remove single item button
 let removesingelitem = document.createElement('button')

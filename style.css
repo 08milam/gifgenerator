@@ -1,37 +1,20 @@
 body{
-    background-color: #423633;
+    background-color: #b8b8b8;
     align-items: center;
     justify-content: center;
     display: flex;
 }
-/* back button */
-.homebtn{
-    top: 10px;
-    left: 10px;
-    padding: 8px;
-    position: fixed;
-    background-color: transparent;
-    border: none;
-    border-radius: 5px;
-    color: gray;
-    font-size: 25px;
-    font-weight: 500;
-    cursor: pointer;
-}
-.homebtn:hover{
-    font-size: 30px;
-}
 /* Giphy party */
-h1{
-    margin-top: -2px;
-    position: absolute;
-    font-size: 3rem;
 
+.headinfo{
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 /* contaner for top submission menu */
 .inputfield{
     width: 100%;
-    height: auto;
+    height: 110px;
     background-color: black;
     position: fixed;
     top: 0;
@@ -40,91 +23,65 @@ h1{
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(70px); 
     background-color: rgba(0,0,0, 0.5);
-    box-shadow: 0px 0px 15px black;
-    color: #917873;
+    color: aliceblue;
     border-bottom: .5px solid #423633 ;
     z-index: 1;
-    -webkit-backdrop-filter: blur(10px); 
-/* 
-    width: 100dvw;
-    height: 50px;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 5;
-    padding: 5px;
-    word-spacing: 5px;
-    color: whitesmoke;
-    backdrop-filter: blur(50px);
-    background-color: rgba(0,0,0, 0.5);
- */
-
-
 }
 /* search field */
-.fetchgif{
-    width: 400px;
-    background-color: #62514D;
+#fetchgif{
+    background-color: #b8b8b8;
     border: none;
+    width: 500px;
+    height: 50px;
     border-radius: 5px;
-    margin: 5px;
+    margin-top: -30px;
     font-size: 2rem;
-    padding: .6rem;
     text-align: center;
-    color: lightgray;
-    margin-top: 65px;
+    color: dimgray;
 }
-.fetchgif:hover{
-    width: 400px;
-    background-color: #917873;
-    border: none;
-    border-radius: 5px;
-    margin: 5px;
-    font-size: 2rem;
-    padding: .5rem;
-    color: lightgray;
-    margin-top: 65px;
-
+#fetchgif:hover{
+    background-color: #cfcfcf;
 }
-.fetchgif:focus{
+#fetchgif:focus{
     border: none;
     outline: none;
-    color: lightgray;
+    color: dimgray;
+    background-color: #cfcfcf;
 }
+::placeholder {
+    color: dimgray;
+  }
 /* gif sumbittion botton */
 .submitBTN{
     display: block;
-    width: 150px;
+    width: 120px;
+    height: 50px;
     background-color: #5E427B;
-    color: white;
-    padding: 1rem;
     text-align: center;
     cursor: pointer;
-    border-radius: 5px;
-    font-size: 1.5rem;
-    color: #75628A;
-    box-shadow: 0 0 3px black;
-    margin: 5px;
-    margin-top: 65px;
+    border-radius: 0 5px 5px;
+    font-size: large;
+    color: #9780a2;
+    margin-top: 80px;
     border: none;
 }
 .submitBTN:hover{
     background-color: #75628A;
-    color: #5E427B;
+    color: #4c306a;
     transition: 200ms;
 }
 .hiddensubmit{
     display: none;
 }
+
 /* main gif container */
 .maingifcontainer{
     margin-top: 120px;
+    margin-bottom: 70px;
     width: 80%;
     height: auto;
-    /* background-color: black; */
-    margin-bottom: 70px;
 }
 /* image */
 img{
@@ -137,28 +94,35 @@ img{
 /* site infomation */
 .info{   
     width: 100%;
-    height: auto;
-    background-color: black;
+    height: 50px;
     position: fixed;
-    bottom: 0;
+    bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(70px);
-    -webkit-backdrop-filter: blur(10px); 
-    background-color: rgba(0,0,0, 0.5);
-    box-shadow: 0px 0px 15px black;
-    color: #423633;
-    border-top: .05px solid;
-    font-size: 2rem;
+    font-size: large;
     word-spacing: 5px;
+}
+
+.navbar-sub-container{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(20px); 
+    background-color: rgba(0,0,0, 0.5);
+    font-size: 2rem;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 p, a{
     text-decoration: none;
-    color: #917873;
-}
-a:hover{
-    color: darkgoldenrod;
+    color: aliceblue;
+    padding: 10px;
 }
 /* container that is created when item is submitted */
 
@@ -181,7 +145,7 @@ a:hover{
     border: none;
 }
 .removesingelitem:hover{
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); 
     background-color: rgba(0,0,0, 0.1);
     position: absolute;
@@ -189,11 +153,7 @@ a:hover{
     color: lightgray;
     font-size: 10em;
     font-weight: 900;
-    text-shadow: 0 0 5px black;
-    border: .5px solid black;
+    border: .5px solid gray;
     box-shadow: 0 0 10px white;
     transition: .4s;
-}
-.navbar-sub-container{
-    padding: 1rem;
 }
